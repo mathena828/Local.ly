@@ -1,2 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap" rel="stylesheet');
+$red: #f13c20;
+$blue: #212fa2;
+$pink: #f64c72;
+$primary: $pink;
+$danger: $red;
+$dark: $blue;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "../../../node_modules/bootstrap-vue/src/index.scss";

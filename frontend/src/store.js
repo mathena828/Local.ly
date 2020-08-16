@@ -5,8 +5,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    is_authenticated: false,
+    is_authenticated: true,
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+    authenticate(state) {
+      state.is_authenticated = !state.is_authenticated;
+    },
+  },
+  actions: {
+    authenticate: ({ commit }) => {
+      commit("authenticate");
+    },
+  },
 });
